@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE7E4AD519F9BE1B00ACB145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E4AD419F9BE1B00ACB145 /* AppDelegate.swift */; };
+		CE7E4AD719F9BE1B00ACB145 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E4AD619F9BE1B00ACB145 /* ViewController.swift */; };
+		CE7E4ADA19F9BE1B00ACB145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4AD819F9BE1B00ACB145 /* Main.storyboard */; };
+		CE7E4ADC19F9BE1B00ACB145 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4ADB19F9BE1B00ACB145 /* Images.xcassets */; };
+		CE7E4ADF19F9BE1B00ACB145 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4ADD19F9BE1B00ACB145 /* LaunchScreen.xib */; };
+		CE7E4AEB19F9BE1B00ACB145 /* NeinTilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E4AEA19F9BE1B00ACB145 /* NeinTilesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE7E4AE519F9BE1B00ACB145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE7E4AC719F9BE1B00ACB145 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE7E4ACE19F9BE1B00ACB145;
+			remoteInfo = NeinTiles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE7E4ACF19F9BE1B00ACB145 /* NeinTiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeinTiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7E4AD319F9BE1B00ACB145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7E4AD419F9BE1B00ACB145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE7E4AD619F9BE1B00ACB145 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE7E4AD919F9BE1B00ACB145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE7E4ADB19F9BE1B00ACB145 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE7E4ADE19F9BE1B00ACB145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CE7E4AE419F9BE1B00ACB145 /* NeinTilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeinTilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7E4AE919F9BE1B00ACB145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7E4AEA19F9BE1B00ACB145 /* NeinTilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeinTilesTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE7E4ACC19F9BE1B00ACB145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7E4AE119F9BE1B00ACB145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE7E4AC619F9BE1B00ACB145 = {
+			isa = PBXGroup;
+			children = (
+				CE7E4AD119F9BE1B00ACB145 /* NeinTiles */,
+				CE7E4AE719F9BE1B00ACB145 /* NeinTilesTests */,
+				CE7E4AD019F9BE1B00ACB145 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE7E4AD019F9BE1B00ACB145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E4ACF19F9BE1B00ACB145 /* NeinTiles.app */,
+				CE7E4AE419F9BE1B00ACB145 /* NeinTilesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE7E4AD119F9BE1B00ACB145 /* NeinTiles */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E4AD419F9BE1B00ACB145 /* AppDelegate.swift */,
+				CE7E4AD619F9BE1B00ACB145 /* ViewController.swift */,
+				CE7E4AD819F9BE1B00ACB145 /* Main.storyboard */,
+				CE7E4ADB19F9BE1B00ACB145 /* Images.xcassets */,
+				CE7E4ADD19F9BE1B00ACB145 /* LaunchScreen.xib */,
+				CE7E4AD219F9BE1B00ACB145 /* Supporting Files */,
+			);
+			path = NeinTiles;
+			sourceTree = "<group>";
+		};
+		CE7E4AD219F9BE1B00ACB145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E4AD319F9BE1B00ACB145 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE7E4AE719F9BE1B00ACB145 /* NeinTilesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E4AEA19F9BE1B00ACB145 /* NeinTilesTests.swift */,
+				CE7E4AE819F9BE1B00ACB145 /* Supporting Files */,
+			);
+			path = NeinTilesTests;
+			sourceTree = "<group>";
+		};
+		CE7E4AE819F9BE1B00ACB145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E4AE919F9BE1B00ACB145 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE7E4ACE19F9BE1B00ACB145 /* NeinTiles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7E4AEE19F9BE1B00ACB145 /* Build configuration list for PBXNativeTarget "NeinTiles" */;
+			buildPhases = (
+				CE7E4ACB19F9BE1B00ACB145 /* Sources */,
+				CE7E4ACC19F9BE1B00ACB145 /* Frameworks */,
+				CE7E4ACD19F9BE1B00ACB145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeinTiles;
+			productName = NeinTiles;
+			productReference = CE7E4ACF19F9BE1B00ACB145 /* NeinTiles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE7E4AE319F9BE1B00ACB145 /* NeinTilesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7E4AF119F9BE1B00ACB145 /* Build configuration list for PBXNativeTarget "NeinTilesTests" */;
+			buildPhases = (
+				CE7E4AE019F9BE1B00ACB145 /* Sources */,
+				CE7E4AE119F9BE1B00ACB145 /* Frameworks */,
+				CE7E4AE219F9BE1B00ACB145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE7E4AE619F9BE1B00ACB145 /* PBXTargetDependency */,
+			);
+			name = NeinTilesTests;
+			productName = NeinTilesTests;
+			productReference = CE7E4AE419F9BE1B00ACB145 /* NeinTilesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE7E4AC719F9BE1B00ACB145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Neva;
+				TargetAttributes = {
+					CE7E4ACE19F9BE1B00ACB145 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					CE7E4AE319F9BE1B00ACB145 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = CE7E4ACE19F9BE1B00ACB145;
+					};
+				};
+			};
+			buildConfigurationList = CE7E4ACA19F9BE1B00ACB145 /* Build configuration list for PBXProject "NeinTiles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE7E4AC619F9BE1B00ACB145;
+			productRefGroup = CE7E4AD019F9BE1B00ACB145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE7E4ACE19F9BE1B00ACB145 /* NeinTiles */,
+				CE7E4AE319F9BE1B00ACB145 /* NeinTilesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE7E4ACD19F9BE1B00ACB145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7E4ADA19F9BE1B00ACB145 /* Main.storyboard in Resources */,
+				CE7E4ADF19F9BE1B00ACB145 /* LaunchScreen.xib in Resources */,
+				CE7E4ADC19F9BE1B00ACB145 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7E4AE219F9BE1B00ACB145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE7E4ACB19F9BE1B00ACB145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7E4AD719F9BE1B00ACB145 /* ViewController.swift in Sources */,
+				CE7E4AD519F9BE1B00ACB145 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7E4AE019F9BE1B00ACB145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7E4AEB19F9BE1B00ACB145 /* NeinTilesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE7E4AE619F9BE1B00ACB145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE7E4ACE19F9BE1B00ACB145 /* NeinTiles */;
+			targetProxy = CE7E4AE519F9BE1B00ACB145 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE7E4AD819F9BE1B00ACB145 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7E4AD919F9BE1B00ACB145 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE7E4ADD19F9BE1B00ACB145 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7E4ADE19F9BE1B00ACB145 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE7E4AEC19F9BE1B00ACB145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE7E4AED19F9BE1B00ACB145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE7E4AEF19F9BE1B00ACB145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NeinTiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE7E4AF019F9BE1B00ACB145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NeinTiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CE7E4AF219F9BE1B00ACB145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NeinTilesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeinTiles.app/NeinTiles";
+			};
+			name = Debug;
+		};
+		CE7E4AF319F9BE1B00ACB145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NeinTilesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeinTiles.app/NeinTiles";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE7E4ACA19F9BE1B00ACB145 /* Build configuration list for PBXProject "NeinTiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7E4AEC19F9BE1B00ACB145 /* Debug */,
+				CE7E4AED19F9BE1B00ACB145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7E4AEE19F9BE1B00ACB145 /* Build configuration list for PBXNativeTarget "NeinTiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7E4AEF19F9BE1B00ACB145 /* Debug */,
+				CE7E4AF019F9BE1B00ACB145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE7E4AF119F9BE1B00ACB145 /* Build configuration list for PBXNativeTarget "NeinTilesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7E4AF219F9BE1B00ACB145 /* Debug */,
+				CE7E4AF319F9BE1B00ACB145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE7E4AC719F9BE1B00ACB145 /* Project object */;
+}
