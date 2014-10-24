@@ -20,6 +20,7 @@
 		CE7E4AFD19FA8C8000ACB145 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E4AFC19FA8C8000ACB145 /* DiceView.swift */; };
 		CE7E4AFF19FA9DDB00ACB145 /* diceRoll.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4AFE19FA9DDB00ACB145 /* diceRoll.m4a */; };
 		CE7E4B0119FAC5A700ACB145 /* submitTileSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4B0019FAC5A700ACB145 /* submitTileSound.m4a */; };
+		CECE64CA19FAECF70082B4B1 /* ScoreCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE64C919FAECF70082B4B1 /* ScoreCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CE7E4AFC19FA8C8000ACB145 /* DiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 		CE7E4AFE19FA9DDB00ACB145 /* diceRoll.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = diceRoll.m4a; sourceTree = "<group>"; };
 		CE7E4B0019FAC5A700ACB145 /* submitTileSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = submitTileSound.m4a; sourceTree = "<group>"; };
+		CECE64C919FAECF70082B4B1 /* ScoreCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				CE7E4AD419F9BE1B00ACB145 /* AppDelegate.swift */,
 				CE7E4AD619F9BE1B00ACB145 /* ViewController.swift */,
+				CECE64C919FAECF70082B4B1 /* ScoreCard.swift */,
 				CE7E4AFC19FA8C8000ACB145 /* DiceView.swift */,
 				CE7E4AD819F9BE1B00ACB145 /* Main.storyboard */,
 				CE7E4ADB19F9BE1B00ACB145 /* Images.xcassets */,
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECE64CA19FAECF70082B4B1 /* ScoreCard.swift in Sources */,
 				CE7E4AD719F9BE1B00ACB145 /* ViewController.swift in Sources */,
 				CE7E4AFD19FA8C8000ACB145 /* DiceView.swift in Sources */,
 				CE7E4AD519F9BE1B00ACB145 /* AppDelegate.swift in Sources */,
@@ -433,6 +437,7 @@
 				CE7E4AF019F9BE1B00ACB145 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE7E4AF119F9BE1B00ACB145 /* Build configuration list for PBXNativeTarget "NeinTilesTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +446,7 @@
 				CE7E4AF319F9BE1B00ACB145 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

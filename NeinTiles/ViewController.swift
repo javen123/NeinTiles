@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     let dieValue = DiceView()
     var currentRoll = 0
     var sumTiles:Int = 0
-    
+//    var reportCard = ScoreCard()
     
     
     // sounds
@@ -104,7 +104,7 @@ class ViewController: UIViewController {
     }
     @IBAction func rollButtonPressed (sender: UIButton) {
         currentRoll = 0
-        
+//        var finalSay = reportCard.scoreCardReturn()
         
         rotateDie()
         diceRollSound?.play()
@@ -126,7 +126,7 @@ class ViewController: UIViewController {
         rollButtonLabel.hidden = true
         
         if curRound == false {
-            roundOverAlert(header: "Nein", message: "You rolled a \(currentRoll). Your final score is \(tilesArray.reduce(0, combine: +))")
+            roundOverAlert(header: "Nein", message: "Final Score is \(tilesArray.reduce(0, combine: +)), your last roll was \(currentRoll)")
         }
         println(curRound)
     }
