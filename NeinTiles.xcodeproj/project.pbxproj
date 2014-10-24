@@ -13,6 +13,13 @@
 		CE7E4ADC19F9BE1B00ACB145 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4ADB19F9BE1B00ACB145 /* Images.xcassets */; };
 		CE7E4ADF19F9BE1B00ACB145 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4ADD19F9BE1B00ACB145 /* LaunchScreen.xib */; };
 		CE7E4AEB19F9BE1B00ACB145 /* NeinTilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E4AEA19F9BE1B00ACB145 /* NeinTilesTests.swift */; };
+		CE7E4AF719FA8C3700ACB145 /* nein.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4AF419FA8C3700ACB145 /* nein.m4a */; };
+		CE7E4AF819FA8C3700ACB145 /* tileDepressedSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4AF519FA8C3700ACB145 /* tileDepressedSound.m4a */; };
+		CE7E4AF919FA8C3700ACB145 /* tilePressedSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4AF619FA8C3700ACB145 /* tilePressedSound.m4a */; };
+		CE7E4AFB19FA8C3F00ACB145 /* wunderbar.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4AFA19FA8C3F00ACB145 /* wunderbar.m4a */; };
+		CE7E4AFD19FA8C8000ACB145 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E4AFC19FA8C8000ACB145 /* DiceView.swift */; };
+		CE7E4AFF19FA9DDB00ACB145 /* diceRoll.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4AFE19FA9DDB00ACB145 /* diceRoll.m4a */; };
+		CE7E4B0119FAC5A700ACB145 /* submitTileSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4B0019FAC5A700ACB145 /* submitTileSound.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		CE7E4AE419F9BE1B00ACB145 /* NeinTilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeinTilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7E4AE919F9BE1B00ACB145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE7E4AEA19F9BE1B00ACB145 /* NeinTilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeinTilesTests.swift; sourceTree = "<group>"; };
+		CE7E4AF419FA8C3700ACB145 /* nein.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = nein.m4a; sourceTree = "<group>"; };
+		CE7E4AF519FA8C3700ACB145 /* tileDepressedSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tileDepressedSound.m4a; sourceTree = "<group>"; };
+		CE7E4AF619FA8C3700ACB145 /* tilePressedSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tilePressedSound.m4a; sourceTree = "<group>"; };
+		CE7E4AFA19FA8C3F00ACB145 /* wunderbar.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wunderbar.m4a; sourceTree = "<group>"; };
+		CE7E4AFC19FA8C8000ACB145 /* DiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
+		CE7E4AFE19FA9DDB00ACB145 /* diceRoll.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = diceRoll.m4a; sourceTree = "<group>"; };
+		CE7E4B0019FAC5A700ACB145 /* submitTileSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = submitTileSound.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,7 @@
 			children = (
 				CE7E4AD419F9BE1B00ACB145 /* AppDelegate.swift */,
 				CE7E4AD619F9BE1B00ACB145 /* ViewController.swift */,
+				CE7E4AFC19FA8C8000ACB145 /* DiceView.swift */,
 				CE7E4AD819F9BE1B00ACB145 /* Main.storyboard */,
 				CE7E4ADB19F9BE1B00ACB145 /* Images.xcassets */,
 				CE7E4ADD19F9BE1B00ACB145 /* LaunchScreen.xib */,
@@ -90,6 +105,12 @@
 		CE7E4AD219F9BE1B00ACB145 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE7E4B0019FAC5A700ACB145 /* submitTileSound.m4a */,
+				CE7E4AFE19FA9DDB00ACB145 /* diceRoll.m4a */,
+				CE7E4AFA19FA8C3F00ACB145 /* wunderbar.m4a */,
+				CE7E4AF419FA8C3700ACB145 /* nein.m4a */,
+				CE7E4AF519FA8C3700ACB145 /* tileDepressedSound.m4a */,
+				CE7E4AF619FA8C3700ACB145 /* tilePressedSound.m4a */,
 				CE7E4AD319F9BE1B00ACB145 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,7 +214,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7E4ADA19F9BE1B00ACB145 /* Main.storyboard in Resources */,
+				CE7E4AF919FA8C3700ACB145 /* tilePressedSound.m4a in Resources */,
+				CE7E4AFF19FA9DDB00ACB145 /* diceRoll.m4a in Resources */,
+				CE7E4AF819FA8C3700ACB145 /* tileDepressedSound.m4a in Resources */,
 				CE7E4ADF19F9BE1B00ACB145 /* LaunchScreen.xib in Resources */,
+				CE7E4B0119FAC5A700ACB145 /* submitTileSound.m4a in Resources */,
+				CE7E4AFB19FA8C3F00ACB145 /* wunderbar.m4a in Resources */,
+				CE7E4AF719FA8C3700ACB145 /* nein.m4a in Resources */,
 				CE7E4ADC19F9BE1B00ACB145 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7E4AD719F9BE1B00ACB145 /* ViewController.swift in Sources */,
+				CE7E4AFD19FA8C8000ACB145 /* DiceView.swift in Sources */,
 				CE7E4AD519F9BE1B00ACB145 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
