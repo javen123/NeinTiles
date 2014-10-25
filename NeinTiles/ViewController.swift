@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     let dieValue = DiceView()
+//    let finalTile = ScoreCard()
     var currentRoll = 0
     var sumTiles:Int = 0
 //    var reportCard = ScoreCard()
@@ -47,6 +48,8 @@ class ViewController: UIViewController {
         for items in tileButtonsCollection {
             items.enabled = false
         }
+        
+        
         
         //default die image view
         
@@ -103,13 +106,14 @@ class ViewController: UIViewController {
         
     }
     @IBAction func rollButtonPressed (sender: UIButton) {
+        
         currentRoll = 0
-//        var finalSay = reportCard.scoreCardReturn()
         
         rotateDie()
         diceRollSound?.play()
-        
         updateView()
+        let finalTile = ScoreCard()
+        var aFinalTile = finalTile.scoreCardReturn()
         
         
         // dice label update count
@@ -126,7 +130,7 @@ class ViewController: UIViewController {
         rollButtonLabel.hidden = true
         
         if curRound == false {
-            roundOverAlert(header: "Nein", message: "Final Score is \(tilesArray.reduce(0, combine: +)), your last roll was \(currentRoll)")
+            roundOverAlert(header: "Nein", message: "Final Score is \(tilesArray.reduce(0, combine: +)), your last roll was \(aFinalTile)")
         }
         println(curRound)
     }
@@ -185,7 +189,7 @@ class ViewController: UIViewController {
         wunderbar?.play()
         var alert = UIAlertController(title: header, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.presentViewController(alert, animated: true, completion: {self.reset()})
     }
     
     func roundOverAlert (header:String = "Nein", message: String) {
