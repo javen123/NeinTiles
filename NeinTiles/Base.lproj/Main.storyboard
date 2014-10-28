@@ -22,117 +22,177 @@
                                     <rect key="frame" x="0.0" y="20" width="320" height="614"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eg9-fj-ZJQ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zQ-fn-0wB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eg9-fj-ZJQ">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="tile1">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" image="tile1Selected"/>
+                                        <state key="selected" image="tile1Selected"/>
+                                        <state key="highlighted" image="tile1Selected"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="-2" y="10" width="96" height="106"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yo9-Z9-W4a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qk-uD-Zlj">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="tile2">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" image="tile2Selected"/>
+                                        <state key="selected" image="tile2Selected"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="96" y="10" width="96" height="106"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yh8-gA-zNk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnT-TY-Sku">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="tile3">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" image="tile3selected"/>
+                                        <state key="selected" image="tile3selected"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="192" y="10" width="96" height="106"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TKG-3H-Tfx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-BB-dwm">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="tile5">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" image="tile5Selected"/>
+                                        <state key="selected" image="tile5Selected"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="96" y="124" width="96" height="106"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZuR-sb-8lz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UE-RU-2xE">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="tile4">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" image="tile4Selected"/>
+                                        <state key="selected" image="tile4Selected"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="-2" y="124" width="96" height="106"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bEM-6R-zIc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGX-Ur-qvt">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="tile6">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" image="tile6Selected"/>
+                                        <state key="selected" image="tile6Selected"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="192" y="124" width="96" height="106"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4jp-Al-r44"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtT-Ad-rPj">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="tile7">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" image="tile7Selected"/>
+                                        <state key="selected" image="tile7Selected"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="240" width="96" height="106"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ntF-BL-EVn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvK-KN-SD6">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="tile8">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" image="tile8Selected"/>
+                                        <state key="selected" image="tile8Selected"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="96" y="240" width="96" height="106"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="C3Q-TT-eHL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2b-VJ-9R1">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="tile9">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled" image="tile9Selected"/>
+                                        <state key="selected" image="tile9Selected"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="192" y="240" width="96" height="106"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gjx-md-zVG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Eg9-fj-ZJQ"/>
+                                        <exclude reference="0qk-uD-Zlj"/>
+                                        <exclude reference="FnT-TY-Sku"/>
+                                        <exclude reference="9NP-BB-dwm"/>
+                                        <exclude reference="4UE-RU-2xE"/>
+                                        <exclude reference="lGX-Ur-qvt"/>
+                                        <exclude reference="EtT-Ad-rPj"/>
+                                        <exclude reference="lvK-KN-SD6"/>
+                                        <exclude reference="f2b-VJ-9R1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="46" width="288" height="354"/>
+                                    <mask key="subviews">
+                                        <include reference="Eg9-fj-ZJQ"/>
+                                        <include reference="0qk-uD-Zlj"/>
+                                        <include reference="FnT-TY-Sku"/>
+                                        <include reference="9NP-BB-dwm"/>
+                                        <include reference="4UE-RU-2xE"/>
+                                        <include reference="lGX-Ur-qvt"/>
+                                        <include reference="EtT-Ad-rPj"/>
+                                        <include reference="lvK-KN-SD6"/>
+                                        <include reference="f2b-VJ-9R1"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQB-nL-nMb" userLabel="Music Note">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="tile1">
+                                <state key="normal" image="music note">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="disabled" image="tile1Selected"/>
-                                <state key="selected" image="tile1Selected"/>
-                                <state key="highlighted" image="tile1Selected"/>
+                                <state key="selected" image="musicOff"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="53" width="96" height="106"/>
+                                    <rect key="frame" x="278" y="449" width="15" height="15"/>
                                 </variation>
                                 <connections>
-                                    <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yo9-Z9-W4a"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qk-uD-Zlj">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="tile2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="tile2Selected"/>
-                                <state key="selected" image="tile2Selected"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="112" y="53" width="96" height="106"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yh8-gA-zNk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnT-TY-Sku">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="tile3">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="tile3selected"/>
-                                <state key="selected" image="tile3selected"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="208" y="53" width="96" height="106"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TKG-3H-Tfx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UE-RU-2xE">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="tile4">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="tile4Selected"/>
-                                <state key="selected" image="tile4Selected"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="167" width="96" height="106"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bEM-6R-zIc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGX-Ur-qvt">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="tile6">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="tile6Selected"/>
-                                <state key="selected" image="tile6Selected"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="208" y="167" width="96" height="106"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4jp-Al-r44"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtT-Ad-rPj">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="tile7">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="tile7Selected"/>
-                                <state key="selected" image="tile7Selected"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="286" width="96" height="106"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ntF-BL-EVn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvK-KN-SD6">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="tile8">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="tile8Selected"/>
-                                <state key="selected" image="tile8Selected"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="113" y="286" width="96" height="106"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="C3Q-TT-eHL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2b-VJ-9R1">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="tile9">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="tile9Selected"/>
-                                <state key="selected" image="tile9Selected"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="208" y="286" width="96" height="106"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gjx-md-zVG"/>
+                                    <action selector="musicButttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QIW-lK-BBE"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="die6" translatesAutoresizingMaskIntoConstraints="NO" id="9e5-WE-tsA">
@@ -183,58 +243,30 @@
                                     <action selector="playButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Re-Fl-4kw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-BB-dwm">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="tile5">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="tile5Selected"/>
-                                <state key="selected" image="tile5Selected"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="112" y="167" width="96" height="106"/>
-                                </variation>
-                                <connections>
-                                    <action selector="tileButtonsPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZuR-sb-8lz"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87058823529411766" green="0.99607843137254903" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="WRX-wt-7PU"/>
-                                <exclude reference="Eg9-fj-ZJQ"/>
-                                <exclude reference="0qk-uD-Zlj"/>
-                                <exclude reference="FnT-TY-Sku"/>
-                                <exclude reference="4UE-RU-2xE"/>
-                                <exclude reference="lGX-Ur-qvt"/>
-                                <exclude reference="EtT-Ad-rPj"/>
-                                <exclude reference="lvK-KN-SD6"/>
-                                <exclude reference="f2b-VJ-9R1"/>
+                                <exclude reference="4zQ-fn-0wB"/>
+                                <exclude reference="VQB-nL-nMb"/>
                                 <exclude reference="9e5-WE-tsA"/>
                                 <exclude reference="2R9-8t-5DM"/>
                                 <exclude reference="zQ9-Jd-WBp"/>
                                 <exclude reference="4hT-tH-UeV"/>
                                 <exclude reference="TSd-Fk-guy"/>
-                                <exclude reference="9NP-BB-dwm"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="WRX-wt-7PU"/>
-                                <include reference="Eg9-fj-ZJQ"/>
-                                <include reference="0qk-uD-Zlj"/>
-                                <include reference="FnT-TY-Sku"/>
-                                <include reference="4UE-RU-2xE"/>
-                                <include reference="lGX-Ur-qvt"/>
-                                <include reference="EtT-Ad-rPj"/>
-                                <include reference="lvK-KN-SD6"/>
-                                <include reference="f2b-VJ-9R1"/>
+                                <include reference="4zQ-fn-0wB"/>
+                                <include reference="VQB-nL-nMb"/>
                                 <include reference="9e5-WE-tsA"/>
                                 <include reference="2R9-8t-5DM"/>
                                 <include reference="zQ9-Jd-WBp"/>
                                 <include reference="4hT-tH-UeV"/>
                                 <include reference="TSd-Fk-guy"/>
-                                <include reference="9NP-BB-dwm"/>
                             </mask>
                         </variation>
                     </view>
@@ -242,15 +274,17 @@
                     <connections>
                         <outlet property="dieImage1Label" destination="9e5-WE-tsA" id="0Fv-vT-kZS"/>
                         <outlet property="dieImage2Label" destination="2R9-8t-5DM" id="c82-Ou-af0"/>
+                        <outlet property="musicButtonLabel" destination="VQB-nL-nMb" id="ssb-ls-3yK"/>
                         <outlet property="playButtonLabel" destination="TSd-Fk-guy" id="WZ1-Mm-0DT"/>
                         <outlet property="rollButtonLabel" destination="zQ9-Jd-WBp" id="Aai-NV-Ppz"/>
                         <outlet property="submitTileScore" destination="4hT-tH-UeV" id="TCu-0m-Ms0"/>
                         <outlet property="submitTilesLabel" destination="4hT-tH-UeV" id="g6l-Rv-Vvx"/>
+                        <outlet property="tileView" destination="4zQ-fn-0wB" id="bPz-tj-Nxg"/>
                         <outletCollection property="tileButtonsCollection" destination="Eg9-fj-ZJQ" collectionClass="NSMutableArray" id="5Tg-cl-aFx"/>
                         <outletCollection property="tileButtonsCollection" destination="0qk-uD-Zlj" collectionClass="NSMutableArray" id="czl-UO-eJU"/>
                         <outletCollection property="tileButtonsCollection" destination="FnT-TY-Sku" collectionClass="NSMutableArray" id="oVp-j9-A4S"/>
-                        <outletCollection property="tileButtonsCollection" destination="4UE-RU-2xE" collectionClass="NSMutableArray" id="kbN-Bt-3IS"/>
                         <outletCollection property="tileButtonsCollection" destination="9NP-BB-dwm" collectionClass="NSMutableArray" id="jcM-B2-wVm"/>
+                        <outletCollection property="tileButtonsCollection" destination="4UE-RU-2xE" collectionClass="NSMutableArray" id="kbN-Bt-3IS"/>
                         <outletCollection property="tileButtonsCollection" destination="lGX-Ur-qvt" collectionClass="NSMutableArray" id="KT6-v0-YgA"/>
                         <outletCollection property="tileButtonsCollection" destination="EtT-Ad-rPj" collectionClass="NSMutableArray" id="BGg-NP-ph4"/>
                         <outletCollection property="tileButtonsCollection" destination="lvK-KN-SD6" collectionClass="NSMutableArray" id="VE4-Zn-nNC"/>
@@ -265,6 +299,8 @@
     <resources>
         <image name="Layer 1" width="320" height="568"/>
         <image name="die6" width="60" height="60"/>
+        <image name="music note" width="26" height="35"/>
+        <image name="musicOff" width="26" height="35"/>
         <image name="play" width="133" height="51"/>
         <image name="rollDice" width="113" height="51"/>
         <image name="submit" width="161" height="31"/>

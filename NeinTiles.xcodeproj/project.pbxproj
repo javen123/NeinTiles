@@ -20,7 +20,7 @@
 		CE7E4AFD19FA8C8000ACB145 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7E4AFC19FA8C8000ACB145 /* DiceView.swift */; };
 		CE7E4AFF19FA9DDB00ACB145 /* diceRoll.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4AFE19FA9DDB00ACB145 /* diceRoll.m4a */; };
 		CE7E4B0119FAC5A700ACB145 /* submitTileSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CE7E4B0019FAC5A700ACB145 /* submitTileSound.m4a */; };
-		CECE64CA19FAECF70082B4B1 /* ScoreCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE64C919FAECF70082B4B1 /* ScoreCard.swift */; };
+		CEB3F35F19FEDDF100E55778 /* 120.120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEB3F35E19FEDDF100E55778 /* 120.120.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 		CE7E4AFC19FA8C8000ACB145 /* DiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 		CE7E4AFE19FA9DDB00ACB145 /* diceRoll.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = diceRoll.m4a; sourceTree = "<group>"; };
 		CE7E4B0019FAC5A700ACB145 /* submitTileSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = submitTileSound.m4a; sourceTree = "<group>"; };
-		CECE64C919FAECF70082B4B1 /* ScoreCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCard.swift; sourceTree = "<group>"; };
+		CEB3F35E19FEDDF100E55778 /* 120.120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 120.120.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,6 @@
 			children = (
 				CE7E4AD419F9BE1B00ACB145 /* AppDelegate.swift */,
 				CE7E4AD619F9BE1B00ACB145 /* ViewController.swift */,
-				CECE64C919FAECF70082B4B1 /* ScoreCard.swift */,
 				CE7E4AFC19FA8C8000ACB145 /* DiceView.swift */,
 				CE7E4AD819F9BE1B00ACB145 /* Main.storyboard */,
 				CE7E4ADB19F9BE1B00ACB145 /* Images.xcassets */,
@@ -108,6 +107,7 @@
 		CE7E4AD219F9BE1B00ACB145 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEB3F35E19FEDDF100E55778 /* 120.120.jpg */,
 				CE7E4B0019FAC5A700ACB145 /* submitTileSound.m4a */,
 				CE7E4AFE19FA9DDB00ACB145 /* diceRoll.m4a */,
 				CE7E4AFA19FA8C3F00ACB145 /* wunderbar.m4a */,
@@ -185,6 +185,7 @@
 				TargetAttributes = {
 					CE7E4ACE19F9BE1B00ACB145 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = G9Y82XZD3R;
 					};
 					CE7E4AE319F9BE1B00ACB145 = {
 						CreatedOnToolsVersion = 6.1;
@@ -222,6 +223,7 @@
 				CE7E4AF819FA8C3700ACB145 /* tileDepressedSound.m4a in Resources */,
 				CE7E4ADF19F9BE1B00ACB145 /* LaunchScreen.xib in Resources */,
 				CE7E4B0119FAC5A700ACB145 /* submitTileSound.m4a in Resources */,
+				CEB3F35F19FEDDF100E55778 /* 120.120.jpg in Resources */,
 				CE7E4AFB19FA8C3F00ACB145 /* wunderbar.m4a in Resources */,
 				CE7E4AF719FA8C3700ACB145 /* nein.m4a in Resources */,
 				CE7E4ADC19F9BE1B00ACB145 /* Images.xcassets in Resources */,
@@ -242,7 +244,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECE64CA19FAECF70082B4B1 /* ScoreCard.swift in Sources */,
 				CE7E4AD719F9BE1B00ACB145 /* ViewController.swift in Sources */,
 				CE7E4AFD19FA8C8000ACB145 /* DiceView.swift in Sources */,
 				CE7E4AD519F9BE1B00ACB145 /* AppDelegate.swift in Sources */,
@@ -304,6 +305,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -346,7 +348,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -360,6 +363,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -368,9 +372,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NeinTiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -378,9 +384,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NeinTiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

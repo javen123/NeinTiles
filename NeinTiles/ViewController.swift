@@ -12,13 +12,12 @@ import AVFoundation
 class ViewController: UIViewController {
     
     let dieValue = DiceView()
-//    let finalTile = ScoreCard()
+    
     var currentRoll = 0
     var sumTiles:Int = 0
-//    var reportCard = ScoreCard()
-    
     
     // sounds
+    
     var wunderbar:AVAudioPlayer?
     var neinSound:AVAudioPlayer?
     var tileSelectSound:AVAudioPlayer?
@@ -34,6 +33,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var rollButtonLabel: UIButton!
     @IBOutlet weak var submitTilesLabel: UIButton!
     @IBOutlet weak var playButtonLabel: UIButton!
+    @IBOutlet weak var musicButtonLabel: UIButton!
+    @IBOutlet weak var tileView: UIView!
     
     // tile button outlet
     
@@ -58,6 +59,7 @@ class ViewController: UIViewController {
         
         
         // prepare sounds
+        
         
         if let wunPath = NSBundle.mainBundle().pathForResource("wunderbar", ofType: "m4a") {
             wunderbar = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: wunPath), error: nil)
@@ -88,6 +90,9 @@ class ViewController: UIViewController {
             submitTileSound = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: submitPath), error: nil)
         }
         submitTileSound?.prepareToPlay()
+        
+   
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -107,16 +112,20 @@ class ViewController: UIViewController {
     }
     @IBAction func rollButtonPressed (sender: UIButton) {
         
+        var fTile = scoreCardReturn()
+        
         currentRoll = 0
         
         rotateDie()
-        diceRollSound?.play()
+        
+        if musicButtonLabel.selected == false {
+            
+            diceRollSound?.play()
+        }
+        tileView.resignFirstResponder()
         updateView()
-        let finalTile = ScoreCard()
-        var aFinalTile = finalTile.scoreCardReturn()
         
-        
-        // dice label update count
+         // dice label update count
         
         let firstDieValue = dieValue.randomDieValue()
         let secondDieValue = dieValue.randomDieValue()
@@ -125,14 +134,21 @@ class ViewController: UIViewController {
         dieImage1Label.image = firstDieValue.1
         dieImage2Label.image = secondDieValue.1
         
+        // round over display
+        
         var curRound = roundOver(tilesArray, value: currentRoll)
         
         rollButtonLabel.hidden = true
         
         if curRound == false {
-            roundOverAlert(header: "Nein", message: "Final Score is \(tilesArray.reduce(0, combine: +)), your last roll was \(aFinalTile)")
+            roundOverAlert(header: "Nein", message: "Final Score: \(tilesArray.reduce(0, combine: +)). \(fTile)")
+           
+            
         }
-        println(curRound)
+        println(tilesArray.reduce(0, combine: +))
+        println(tilesArray)
+        
+
     }
     
     @IBAction func tileButtonsPressed (sender: UIButton) {
@@ -147,13 +163,17 @@ class ViewController: UIViewController {
         
         if sender.selected == true {
             sender.selected = true
-            tileSelectSound?.play()
+                if musicButtonLabel.selected == false {
+                tileSelectSound?.play()
+                }
             tilesArray = tilesArray.filter({$0 != aTag})
             curTiles.append(aTag)
         }
         else if sender.selected == false {
             sender.selected = false
-            tileDeSelectSound?.play()
+            if musicButtonLabel.selected == false {
+                tileDeSelectSound?.play()
+            }
             curTiles = curTiles.filter({$0 != aTag})
             tilesArray.append(aTag)
         }
@@ -164,16 +184,34 @@ class ViewController: UIViewController {
     @IBAction func submitTileCountButtonPressed(sender: AnyObject) {
         
         updateView()
-        submitTileSound?.play()
+        
+        if musicButtonLabel.selected == false {
+            submitTileSound?.play()
+        }
+        
         submitTileScore.hidden = true
         curTiles.removeAll(keepCapacity: true)
         rollButtonLabel.hidden = false
-        println(tilesArray)
+        
         if tilesArray.count == 0 {
-            gameWon(header: "Wunderbar", message: "You've blitzed the game. You're pretty awesome and I hope you won some money because of this")
+            gameWon(header: "Wunderbar", message: "You've won the game. You now have nein tiles!")
         }
     }
 
+    @IBAction func musicButttonPressed(sender: UIButton) {
+        
+        sender.selected = !sender.selected
+        
+        if sender.selected == true {
+            musicButtonLabel.selected = true
+           
+            
+        } else {
+            musicButtonLabel.selected = false
+            
+        }
+        
+    }
     
     // Helpers
     
@@ -182,6 +220,7 @@ class ViewController: UIViewController {
         var alert = UIAlertController(title: header, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:nil))
         self.presentViewController(alert, animated: true, completion: nil)
+        
         
     }
     
@@ -242,8 +281,29 @@ class ViewController: UIViewController {
         } else {
             submitTileScore.hidden = true
         }
-        println(sumTiles)
+        
     }
+    func scoreCardReturn () -> String {
+        
+        var finalRoll = tilesArray.reduce(0, combine: +)
+        
+        var y = "Worst Roll EVER!!"
+        
+        if (finalRoll >= 1 && finalRoll <= 5) {
+            y = "Wow. Almost closed'em all out. Try it again!"
+        } else if (finalRoll >= 6 && finalRoll <= 10) {
+            y = "You can do better than that. Try again!"
+        } else if (finalRoll >= 11 && finalRoll <= 15) {
+            y = "Below 10 is what you are looking for. Try again! "
+        }
+        else if (finalRoll >= 16 && finalRoll <= 25) {
+            y = "Let's just forget about that game. Try again!"
+        }
+        
+        println("scoreCard:\(finalRoll)")
+        return y
+    }
+
     
     
     func updateView () {
@@ -268,6 +328,7 @@ class ViewController: UIViewController {
             items.enabled = false
             items.selected = false
         
+        rollButtonLabel.hidden = true
         playButtonLabel.hidden = false
         curTiles.removeAll(keepCapacity: true)
         tilesArray = [1,2,3,4,5,6,7,8,9]
