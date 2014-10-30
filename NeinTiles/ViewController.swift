@@ -178,6 +178,8 @@ class ViewController: UIViewController {
             tilesArray.append(aTag)
         }
         matchTileDice()
+        
+        println(sender.description)
      }
     
     
@@ -283,6 +285,7 @@ class ViewController: UIViewController {
         }
         
     }
+    
     func scoreCardReturn () -> String {
         
         var finalRoll = tilesArray.reduce(0, combine: +)
