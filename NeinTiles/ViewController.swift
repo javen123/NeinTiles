@@ -215,7 +215,7 @@ class ViewController: UIViewController {
         
     }
     
-    // Helpers
+       // Helpers
     
     func showAlert (header:String = "Nein", message:String) {
         neinSound?.play()
