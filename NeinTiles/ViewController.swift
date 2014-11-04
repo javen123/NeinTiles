@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import CoreGraphics
 
 class ViewController: UIViewController {
     
@@ -117,6 +118,7 @@ class ViewController: UIViewController {
         currentRoll = 0
         
         rotateDie()
+       
         
         if musicButtonLabel.selected == false {
             
@@ -259,22 +261,22 @@ class ViewController: UIViewController {
     
     func rotateDie () {
         
-        UIView.animateWithDuration(0.5,
+        
+        UIView.animateWithDuration(0.25,
             delay: 0.0,
-            options: .CurveLinear,
-            animations: {self.dieImage1Label.transform = CGAffineTransformRotate(self.dieImage1Label.transform, 3.1415926)},
-            completion: nil)
+            options: UIViewAnimationOptions.CurveLinear,
+            animations: {UIView .setAnimationRepeatCount(3); self.dieImage1Label.transform = CGAffineTransformRotate(self.dieImage1Label.transform, 3.1415926)},
+            completion:nil)
         
-        UIView.animateWithDuration(0.5,
+        UIView.animateWithDuration(0.25,
             delay: 0.0,
-            options: .CurveLinear,
-            animations: {self.dieImage2Label.transform = CGAffineTransformRotate(self.dieImage2Label.transform, 3.1415926)},
-            completion: nil)
+            options: UIViewAnimationOptions.CurveLinear,
+            animations: {UIView .setAnimationRepeatCount(3); self.dieImage2Label.transform = CGAffineTransformRotate(self.dieImage2Label.transform, 3.1415926)},
+            completion:nil)
         
-        
-    }
+     }
     
-    func matchTileDice () {
+     func matchTileDice () {
         sumTiles = curTiles.reduce(0, combine: +)
         if sumTiles == currentRoll {
             submitTileScore.hidden = false
