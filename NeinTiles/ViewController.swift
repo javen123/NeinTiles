@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var submitTileScore: UIButton!
     @IBOutlet weak var rollButtonLabel: UIButton!
     @IBOutlet weak var submitTilesLabel: UIButton!
-    @IBOutlet weak var playButtonLabel: UIButton!
     @IBOutlet weak var musicButtonLabel: UIButton!
     @IBOutlet weak var tileView: UIView!
     
@@ -101,17 +100,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func playButtonPressed(sender: AnyObject) {
-        
-        rollButtonLabel.hidden = false
-        playButtonLabel.hidden = true
-        for items in tileButtonsCollection {
-            
-            items.selected = false
-        }
-        
-    }
-    @IBAction func rollButtonPressed (sender: UIButton) {
+        @IBAction func rollButtonPressed (sender: UIButton) {
         
         var fTile = scoreCardReturn()
         
@@ -223,7 +212,7 @@ class ViewController: UIViewController {
         neinSound?.play()
         var alert = UIAlertController(title: header, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler:nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.presentViewController(alert, animated: true, completion:nil)
         
         
     }
@@ -292,20 +281,28 @@ class ViewController: UIViewController {
         
         var finalRoll = tilesArray.reduce(0, combine: +)
         
-        var y = "Worst Roll EVER!!"
+        var y:String
         
-        if (finalRoll >= 1 && finalRoll <= 5) {
-            y = "Wow. Almost closed'em all out. Try it again!"
-        } else if (finalRoll >= 6 && finalRoll <= 10) {
-            y = "You can do better than that. Try again!"
-        } else if (finalRoll >= 11 && finalRoll <= 15) {
-            y = "Below 10 is what you are looking for. Try again! "
+        switch finalRoll {
+        case 1:
+            y = "Ehrfürchtige! Fantastic Roll!"
+        case 2:
+            y = "Almost Perfekt! Try Again."
+        case 3:
+            y = "Anything below 5 is Great!"
+        case 4:
+            y = "The die must be faulty! Try Again."
+        case 5:
+            y = "Not bad. Not bad at all. Try Again."
+        case 6...10:
+            y = "So close. Try to get below 5. Roll Again."
+        case 11...15:
+            y = "That's just some bad luck. Roll again."
+        case 16...22:
+            y = "The object of the game is to remove the tiles. In case you forgot."
+        default:
+            y = "Try that one again!"
         }
-        else if (finalRoll >= 16 && finalRoll <= 25) {
-            y = "Let's just forget about that game. Try again!"
-        }
-        
-        println("scoreCard:\(finalRoll)")
         return y
     }
 
@@ -327,16 +324,16 @@ class ViewController: UIViewController {
         
         dieImage1Label.image = UIImage(named: "die6")
         dieImage2Label.image = UIImage(named: "die6")
-        
+        rollButtonLabel.hidden = false
         
         for items in tileButtonsCollection {
             items.enabled = false
             items.selected = false
         
-        rollButtonLabel.hidden = true
-        playButtonLabel.hidden = false
+        
         curTiles.removeAll(keepCapacity: true)
         tilesArray = [1,2,3,4,5,6,7,8,9]
+            
         
     }
 

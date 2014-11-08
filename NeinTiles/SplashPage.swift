@@ -30,7 +30,9 @@ class SplashPage: UIViewController {
     
     @IBAction func splashPageSwiped(sender: UISwipeGestureRecognizer) {
         
-        performSegueWithIdentifier("beginGame", sender: nil)
+       
+       performSegueWithIdentifier("beginGame", sender: nil)
+        
     }
 
    
