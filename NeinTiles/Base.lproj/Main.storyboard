@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Splash Page-->
+        <!--View Controller-->
         <scene sceneID="1nG-TD-ID3">
             <objects>
-                <viewController id="ne3-jh-lNW" customClass="SplashPage" customModule="NeinTiles" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ne3-jh-lNW" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oFB-UL-42X"/>
                         <viewControllerLayoutGuide type="bottom" id="6Hw-Vg-aXd"/>
@@ -22,20 +22,40 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <gestureRecognizers/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLF-0T-sdg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="A69-lO-wGr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.84705882352941175" green="1" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="dLF-0T-sdg" firstAttribute="top" secondItem="adE-Xu-veY" secondAttribute="bottom" constant="94" id="Jcy-Cr-lcJ"/>
+                            <constraint firstAttribute="centerX" secondItem="dLF-0T-sdg" secondAttribute="centerX" constant="-0.5" id="Zvs-by-nDf"/>
+                            <constraint firstAttribute="centerY" secondItem="dLF-0T-sdg" secondAttribute="centerY" constant="-194.5" id="deN-Qh-hsN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="adE-Xu-veY" secondAttribute="trailing" constant="-16" id="fVH-Ul-Nbw"/>
-                            <constraint firstItem="adE-Xu-veY" firstAttribute="top" secondItem="oFB-UL-42X" secondAttribute="bottom" constant="-20" id="fzp-Ps-VLa"/>
-                            <constraint firstItem="6Hw-Vg-aXd" firstAttribute="top" secondItem="adE-Xu-veY" secondAttribute="bottom" id="sZX-ze-hQT"/>
+                            <constraint firstItem="adE-Xu-veY" firstAttribute="top" secondItem="oFB-UL-42X" secondAttribute="bottom" constant="-20" id="fzp-Ps-VLa">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="6Hw-Vg-aXd" firstAttribute="top" secondItem="adE-Xu-veY" secondAttribute="bottom" id="sZX-ze-hQT">
+                                <variation key="widthClass=compact" constant="209"/>
+                            </constraint>
                             <constraint firstItem="adE-Xu-veY" firstAttribute="leading" secondItem="HL9-P0-6bT" secondAttribute="leadingMargin" constant="-16" id="zn3-3a-oxI"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="adE-Xu-veY"/>
+                                <exclude reference="dLF-0T-sdg"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="sZX-ze-hQT"/>
+                                <exclude reference="Jcy-Cr-lcJ"/>
+                                <exclude reference="Zvs-by-nDf"/>
+                                <exclude reference="deN-Qh-hsN"/>
                                 <exclude reference="fVH-Ul-Nbw"/>
                                 <exclude reference="fzp-Ps-VLa"/>
                                 <exclude reference="zn3-3a-oxI"/>
@@ -44,9 +64,13 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="adE-Xu-veY"/>
+                                <include reference="dLF-0T-sdg"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="sZX-ze-hQT"/>
+                                <include reference="Jcy-Cr-lcJ"/>
+                                <include reference="Zvs-by-nDf"/>
+                                <include reference="deN-Qh-hsN"/>
                                 <include reference="fVH-Ul-Nbw"/>
                                 <include reference="fzp-Ps-VLa"/>
                                 <include reference="zn3-3a-oxI"/>
@@ -54,17 +78,8 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="splashPageGesture" destination="o2C-xF-SgW" id="Nbq-Qf-dCv"/>
-                        <segue destination="vXZ-lx-hvc" kind="show" identifier="beginGame" id="XsT-5E-SvR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwe-iK-fu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="o2C-xF-SgW">
-                    <connections>
-                        <action selector="splashPageSwiped:" destination="ne3-jh-lNW" id="SJl-oH-XDX"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-273" y="428"/>
         </scene>
@@ -581,8 +596,9 @@
         <image name="infoButton" width="35" height="35"/>
         <image name="music note" width="26" height="35"/>
         <image name="musicOff" width="26" height="35"/>
+        <image name="play" width="133" height="51"/>
         <image name="rollDice" width="113" height="51"/>
-        <image name="splashPage" width="300" height="568"/>
+        <image name="splashPage" width="232" height="313"/>
         <image name="submit" width="161" height="31"/>
         <image name="tile1" width="117" height="146"/>
         <image name="tile1Selected" width="117" height="146"/>
@@ -605,6 +621,6 @@
         <image name="tilePad" width="286" height="338"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="E6I-Jw-VU3"/>
+        <segue reference="A69-lO-wGr"/>
     </inferredMetricsTieBreakers>
 </document>
